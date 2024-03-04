@@ -108,7 +108,7 @@ const experiences = [
 
 	<!-- Banner -->
 	
-	<section class="w-full h-[35rem] bg-hero bg-no-repeat bg-cover lg:min-h-[30rem] px-12 xl:px-0 flex items-center ">
+	<section class="w-full h-[30rem] bg-hero bg-no-repeat bg-cover lg:min-h-[30rem] px-12 xl:px-0 flex items-center ">
 		<div class="lg:max-w-[1200px] w-full mx-auto flex flex-col">
 			<h1 class="text-[40px] leading-[50px] md:text-[60px] xl:text-[85px] pb-4 font-dm md:leading-[106.25px] w-full xl:max-w-[50%] text-white">SoftwareSpace</h1>
 			<p class="text-base md:text-[22px] pb-5 font-jost text-primary-400 w-full lg:max-w-[50%]">Traemos el poder del espacio directamente a tu maquina.</p>
@@ -120,7 +120,7 @@ const experiences = [
 
 	<!-- Services Section -->
 
-	<section class="lg:max-w-[1200px] flex flex-col gap-8 lg:gap-10 lg:flex-row px-12 xl:px-0 w-full mx-auto pt-[100px] lg:pt-[50px] justify-between ">
+	<section class="lg:max-w-[1200px] flex flex-col gap-8 lg:gap-10 lg:flex-row px-12 xl:px-0 w-full mx-auto pt-[100px] lg:pt-[75px] justify-between ">
 		{
 			services.map((service) => {
 				return (
@@ -136,22 +136,24 @@ const experiences = [
 
 	<!-- About Section -->
 
-	<section class="w-full lg:max-w-[1200px] mx-auto px-12 xl:px-0 flex flex-col-reverse justify-center items-center lg:grid grid-cols-2 gap-[75px] pt-[100px] lg:pt-[200px]">
+	<section class="w-full lg:max-w-[1200px] mx-auto px-12 xl:px-0 flex flex-col-reverse justify-center items-center lg:grid grid-cols-2 gap-[75px] pt-[100px] lg:pt-[75px]">
 		<div class="flex flex-col gap-8 max-w-[472px] items-center lg:items-start py-6">
-			<h2 class="text-[30px] text-center capitalize lg:text-left font-dm tracking-wide leading-8 md:leading-[62.50px] md:text-[50px] text-text-blue ">We Create The Art Of Stylish Living Stylishly</h2>
-			<p class="text-base md:text-[22px] text-center lg:text-left tracking-tight font-jost text-text-gray leading-[33px]">It is a long established fact that a reader will be distracted by the of readable content of a page when lookings at its layouts the points of using that it has a more-or-less normal.</p>
+			<h2 class="text-[30px] text-center capitalize lg:text-left font-dm tracking-wide leading-8 md:leading-[62.50px] md:text-[50px] text-text-blue ">Contruimos lo que necesitas</h2>
+			<p class="text-base md:text-[22px] text-center lg:text-left tracking-tight font-jost text-text-gray leading-[33px]">Es muy comun en empresas de desarrollo de software no entregar lo solicitado. Lo haremos diferente.</p>
 			<div class="flex gap-4 pt-3 items-center">
 				<CallIcon/>
 				<p class="flex flex-col text-text-gray-200 font-jost tracking-tight">
-					<span class="text-2xl font-bold leading-9 ">012345678</span>
-					<span class="text-[22px] leading-8">Call Us Anytime</span>
+					<span class="text-2xl font-bold leading-9 ">+57 3123456789</span>
+					<span class="text-[22px] leading-8">No dudes en llamar</span>
 				</p>
 			</div>
-			<Button text="Get Free Estimate"/>
+			<a href="/contact">
+				<Button text="Dejanos ayudarte"/>
+			</a>
 		</div>
 
 		<div>
-			<img src="/about-img.png" alt="" />
+			<img src="/" alt="" />
 		</div>
 	</section>
 
