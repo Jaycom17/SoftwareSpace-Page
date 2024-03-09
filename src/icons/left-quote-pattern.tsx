@@ -10,7 +10,7 @@ const LeftPattern = () => {
     >
       <path
         d="M201.5 13H83C44.3401 13 13 44.3401 13 83V371C13 409.66 44.3401 441 83 441H201.5"
-        stroke="#F4F0EC"
+        stroke="#808080"
         strokeWidth="25"
       />
     </svg>

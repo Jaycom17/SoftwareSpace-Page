@@ -7,7 +7,7 @@ const Navbar = () => {
   const [toggled, setToggled] = useState(false);
   const matches = useMediaQuery("(min-width: 1280px)");
 
-  const linkStyle = "text-xl leading-6 font-jost text-primary-200";
+  const linkStyle = "text-xl leading-6 font-jost text-primary-200 ease-in-out duration-300 hover:scale-105";
 
   return (
     <div className="max-w-[1200px] px-12 xl:px-0 m-auto w-full py-3 flex justify-between items-center">

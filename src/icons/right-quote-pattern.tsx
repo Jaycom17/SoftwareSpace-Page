@@ -12,7 +12,7 @@ const RightPattern = () => {
     >
       <path
         d="M3.74169e-05 441H118.5C157.16 441 188.5 409.66 188.5 371L188.5 83C188.5 44.34 157.16 13 118.5 13L0 13"
-        stroke="#F4F0EC"
+        stroke="#808080"
         stroke-width="25"
       />
     </svg>

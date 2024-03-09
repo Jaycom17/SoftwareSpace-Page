@@ -1,105 +1,504 @@
 ---
-import MainLayout from '../layouts/main-layout.astro'
-import QuoteText from '../components/quote.tsx'
-import  Facebook  from '../icons/facebook.tsx';
-import  Twitter  from '../icons/twitter.tsx';
-import  LinkedIn  from '../icons/linkedin.tsx';
-import Instagram  from '../icons/instagram.tsx';
-
+import MainLayout from "../layouts/main-layout.astro";
+import QuoteText from "../components/quote.tsx";
 ---
 
-
-<MainLayout title = 'Interior Design About Us'>
-
-  <!-- Banner Section -->
-
-  <section class="w-full bg-about h-[50vh] flex justify-center items-end">
-    <div class="py-[30px] lg:py-[41px] px-[60px] lg:px-[152px] flex flex-col justify-center items-center bg-white rounded-tl-[37px] rounded-tr-[37px] gap-2.5">
-      <h1 class="text-[30px] leading-[40px] lg:text-[50px] lg:leading-[62px] font-dm capitalize text-primary-200 ">About Us</h1>
-      <p class="text-base lg:text-[22px] lg:leading-[33px] tracking-tight font-jost text-text-gray"> <a href="/">Home</a> / About Us </p>
-    </div>
-  </section>
-
+<MainLayout title="Interior Design About Us">
   <!-- Quote Section -->
 
-  <section class="w-full px-12 lg:px-0 pt-[100px] lg:pt-[200px] lg:max-w-[1200px] mx-auto flex items-center justify-center">
-    <QuoteText text="I like an interior that defies labeling. I don't really want someone to walk into a room and know that I did it" name="BUNNY WILLIAMS"/>
+  <section
+    class="w-full px-12 lg:px-0 pt-[100px] lg:pt-[100px] lg:max-w-[1200px] mx-auto flex items-center justify-center"
+  >
+    <QuoteText
+      text="Espero que esta sea la mejor etapa de tu vida porque trabajar con gente increíble, si puedes lograrlo, es simplemente un placer"
+      name="Steve Jobs"
+    />
   </section>
 
   <!-- What We Do Section -->
 
-  <section class="w-full pt-[100px] lg:pt-[150px] px-12 lg:px-0 mx-auto lg:max-w-[1200px] ">
-    <div class="w-full flex flex-col-reverse lg:flex-row justify-between gap-10 items-center">
+  <section
+    class="w-full pt-[100px] lg:pt-[100px] px-12 lg:px-0 mx-auto lg:max-w-[1200px]"
+  >
+    <div
+      class="w-full flex flex-col-reverse lg:flex-row justify-between gap-10 items-center"
+    >
       <div class="flex flex-col gap-6">
-        <h2 class="text-[30px] text-center lg:text-left font-dm tracking-wide capitalize leading-8 md:leading-[62.50px] md:text-[50px] text-text-blue ">We what we do</h2>
-        <p class="text-base md:text-[22px] lg:max-w-[85%] text-center lg:text-left tracking-tight font-jost text-text-gray leading-[33px]">It is a long established fact that a reader will be distracted by the of readable content of a page when lookings at its layouts the points of using that it has a more-or-less normal.</p>
+        <h2
+          class="text-[30px] text-center lg:text-left font-dm tracking-wide capitalize leading-8 md:leading-[62.50px] md:text-[50px] text-text-blue"
+        >
+          We what we do
+        </h2>
+        <p
+          class="text-base md:text-[22px] lg:max-w-[85%] text-center lg:text-left tracking-tight font-jost text-text-gray leading-[33px]"
+        >
+          It is a long established fact that a reader will be distracted by the
+          of readable content of a page when lookings at its layouts the points
+          of using that it has a more-or-less normal.
+        </p>
       </div>
-      <img src="/about1.png" alt="">
+      <img src="/about1.png" alt="" />
     </div>
   </section>
 
   <!-- The End Result Section -->
 
-   <section class="w-full pt-[100px] lg:pt-[150px] px-12 lg:px-0 mx-auto lg:max-w-[1200px] ">
-    <div class="w-full flex flex-col-reverse lg:flex-row-reverse justify-between gap-24 items-center">
+  <section
+    class="w-full pt-[100px] lg:pt-[150px] px-12 lg:px-0 mx-auto lg:max-w-[1200px]"
+  >
+    <div
+      class="w-full flex flex-col-reverse lg:flex-row-reverse justify-between gap-24 items-center"
+    >
       <div class="flex flex-col gap-6">
-        <h2 class="text-[30px] text-center lg:text-left font-dm tracking-wide capitalize leading-8 md:leading-[62.50px] md:text-[50px] text-text-blue ">The End Result</h2>
-        <p class="text-base md:text-[22px] lg:max-w-[95%] text-center lg:text-left tracking-tight font-jost text-text-gray leading-[33px]">It is a long established fact that a reader will be distracted by the of readable content of a page when lookings at its layouts the points of using that it has a more-or-less normal.</p>
+        <h2
+          class="text-[30px] text-center lg:text-left font-dm tracking-wide capitalize leading-8 md:leading-[62.50px] md:text-[50px] text-text-blue"
+        >
+          The End Result
+        </h2>
+        <p
+          class="text-base md:text-[22px] lg:max-w-[95%] text-center lg:text-left tracking-tight font-jost text-text-gray leading-[33px]"
+        >
+          It is a long established fact that a reader will be distracted by the
+          of readable content of a page when lookings at its layouts the points
+          of using that it has a more-or-less normal.
+        </p>
       </div>
-      <img src="/about2.png" alt="">
+      <img src="/about2.png" alt="" />
     </div>
   </section>
 
   <!-- What People Think About Us Section -->
 
-  <section class="w-full py-[100px] lg:py-[185px] mt-[173px] px-12 lg:px-0 mx-auto bg-primary-300 ">
-    <div class="w-full flex flex-col gap-10 lg:max-w-[1200px] mx-auto" >
-		  <h2 class="font-dm tracking-wide text-center leading-[37px] lg:leading-[62.50px] text-[30px] lg:text-[50px] w-full lg:max-w-[50%] pb-9 mx-auto">What the People Thinks About Us</h2>
-      <div class="flex w-full overflow-x-scroll gap-4 flex-row no-scrollbar">
-        <img src="/person1.png" alt="">
-        <img src="/person2.png" alt="">
-        <div class="flex flex-col gap-10 w-full justify-between py-[70px] px-7 bg-white min-w-[284px] items-center rounded-[32px]">
-          <p class="flex flex-col tracking-tight leading-9 text-center">
-            <span class="text-primary-200 text-lg lg:text-[25px] font-dm">Nattasha Julie</span>
-            <span class="text-text-gray-200 text-base lg:text-lg font-jost"> Design, Australia</span>
-					</p>
-          <div class="flex gap-6">
-             <a href="/">
-              <Facebook />
-            </a>
-            <a href="/">
-              <Twitter />
-            </a>
-            <a href="/">
-              <LinkedIn />
-            </a>
-            <a href="/">
-              <Instagram />
-            </a>
+  <section
+    class="w-full py-[100px] lg:py-[185px] mt-[173px] mx-auto bg-primary-300"
+  >
+    <h2
+      class="font-dm tracking-wide text-center leading-[37px] lg:leading-[62.50px] text-[30px] lg:text-[50px] w-full lg:max-w-[50%] pb-9 mx-auto"
+    >
+      Equipo de trabajo
+    </h2>
+    <!-- component -->
+    <div class="mb-16">
+      <!-- Code block starts -->
+      <dh-component>
+        <div class="w-full bg-primary-300 px-10 pt-10">
+          <div class="container mx-auto">
+            <div
+              aria-label="Behind the scenes People "
+              class="lg:flex md:flex sm:flex items-center xl:justify-around flex-wrap md:justify-around sm:justify-around lg:justify-around"
+            >
+              <div
+                role="listitem"
+                class="xl:w-1/3 sm:w-3/4 md:w-2/5 relative mt-16 mb-32 sm:mb-24 xl:max-w-sm lg:w-2/5"
+              >
+                <div class="rounded overflow-hidden shadow-md bg-white">
+                  <div class="absolute -mt-20 w-full flex justify-center">
+                    <div class="h-32 w-32">
+                      <img
+                        src="./rosero.jpeg"
+                        alt="Display Picture of Jorge Andres Rosero"
+                        role="img"
+                        class="rounded-full object-cover h-full w-full shadow-md"
+                      />
+                    </div>
+                  </div>
+                  <div class="px-6 mt-16">
+                    <h1 class="font-bold text-3xl text-center mb-1">
+                      Jorge Andres Rosero
+                    </h1>
+                    <p class="text-gray-800 text-sm text-center">Lider</p>
+                    <p
+                      class="text-center text-gray-600 text-base pt-3 font-normal"
+                    >
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Molestiae neque, eaque nobis sunt ex soluta? Vel at non
+                      unde, accusamus architecto consectetur ducimus corporis
+                      deleniti! Quae vitae unde nisi laudantium.
+                    </p>
+                    <div class="w-full flex justify-center pt-5 pb-5">
+                      <a href="javascript:void(0)" class="mx-5">
+                        <div aria-label="Github" role="img">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="#718096"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            class="feather feather-github"
+                          >
+                            <path
+                              d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                            ></path>
+                          </svg>
+                        </div>
+                      </a>
+                      
+                      <a href="javascript:void(0)" class="mx-5">
+                        <div aria-label="Linkedin" role="img">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 17 17"
+                            fill="none"
+                          >
+                            <rect
+                              x="2"
+                              y="2"
+                              width="20"
+                              height="20"
+                              rx="5"
+                              ry="5"></rect>
+                            <path
+                              d="M4.14062 16.5V5.98828H0.871094V16.5H4.14062ZM2.48828 4.58203C3.54297 4.58203 4.38672 3.70312 4.38672 2.64844C4.38672 1.62891 3.54297 0.785156 2.48828 0.785156C1.46875 0.785156 0.625 1.62891 0.625 2.64844C0.625 3.70312 1.46875 4.58203 2.48828 4.58203ZM16.3398 16.5H16.375V10.7344C16.375 7.92188 15.7422 5.74219 12.4375 5.74219C10.8555 5.74219 9.80078 6.62109 9.34375 7.42969H9.30859V5.98828H6.17969V16.5H9.44922V11.2969C9.44922 9.92578 9.69531 8.625 11.3828 8.625C13.0703 8.625 13.1055 10.1719 13.1055 11.4023V16.5H16.3398Z"
+                              fill="#718096 "
+                            ></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                          </svg>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                role="listitem"
+                class="xl:w-1/3 lg:mx-3 sm:w-3/4 md:w-2/5 relative mt-16 mb-32 sm:mb-24 xl:max-w-sm lg:w-2/5"
+              >
+                <div class="rounded overflow-hidden shadow-md bg-white">
+                  <div class="absolute -mt-20 w-full flex justify-center">
+                    <div class="h-32 w-32">
+                      <img
+                        src="./alegria.jpeg"
+                        alt="Display Picture of Juan Camilo Sarabino"
+                        role="img"
+                        class="rounded-full object-cover h-full w-full shadow-md"
+                      />
+                    </div>
+                  </div>
+                  <div class="px-6 mt-16">
+                    <h1 class="font-bold text-3xl text-center mb-1">
+                      Juan Camilo Sarabino
+                    </h1>
+                    <p class="text-gray-800 text-sm text-center">Secretario</p>
+                    <p
+                      class="text-center text-gray-600 text-base pt-3 font-normal"
+                    >
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Dolorum minima tenetur dolores quae architecto doloribus
+                      libero perferendis culpa earum, sed quia maxime, commodi
+                      quibusdam vitae porro nesciunt voluptate a explicabo?
+                    </p>
+                    <div class="w-full flex justify-center pt-5 pb-5">
+                      <a href="javascript:void(0)" class="mx-5">
+                        <div aria-label="Github" role="img">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="#718096"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            class="feather feather-github"
+                          >
+                            <path
+                              d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                            ></path>
+                          </svg>
+                        </div>
+                      </a>
+                      
+                      <a href="javascript:void(0)" class="mx-5">
+                        <div aria-label="Linkedin" role="img">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 17 17"
+                            fill="none"
+                          >
+                            <rect
+                              x="2"
+                              y="2"
+                              width="20"
+                              height="20"
+                              rx="5"
+                              ry="5"></rect>
+                            <path
+                              d="M4.14062 16.5V5.98828H0.871094V16.5H4.14062ZM2.48828 4.58203C3.54297 4.58203 4.38672 3.70312 4.38672 2.64844C4.38672 1.62891 3.54297 0.785156 2.48828 0.785156C1.46875 0.785156 0.625 1.62891 0.625 2.64844C0.625 3.70312 1.46875 4.58203 2.48828 4.58203ZM16.3398 16.5H16.375V10.7344C16.375 7.92188 15.7422 5.74219 12.4375 5.74219C10.8555 5.74219 9.80078 6.62109 9.34375 7.42969H9.30859V5.98828H6.17969V16.5H9.44922V11.2969C9.44922 9.92578 9.69531 8.625 11.3828 8.625C13.0703 8.625 13.1055 10.1719 13.1055 11.4023V16.5H16.3398Z"
+                              fill="#718096 "
+                            ></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                          </svg>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                role="listitem"
+                class="xl:w-1/3 sm:w-3/4 md:w-2/5 relative mt-16 mb-32 sm:mb-24 xl:max-w-sm lg:w-2/5"
+              >
+                <div class="rounded overflow-hidden shadow-md bg-white">
+                  <div class="absolute -mt-20 w-full flex justify-center">
+                    <div class="h-32 w-32">
+                      <img
+                        src="https://cdn.tuk.dev/assets/photo-1566753323558-f4e0952af115.jfif"
+                        alt="Display Picture of Eduard Bolaños Mosquera"
+                        role="img"
+                        class="rounded-full object-cover h-full w-full shadow-md"
+                      />
+                    </div>
+                  </div>
+                  <div class="px-6 mt-16">
+                    <h1 class="font-bold text-3xl text-center mb-1">
+                      Eduard Bolaños Mosquera
+                    </h1>
+                    <p class="text-gray-800 text-sm text-center">Interventor</p>
+                    <p
+                      class="text-center text-gray-600 text-base pt-3 font-normal"
+                    >
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Minus commodi quas numquam esse, eaque quo. Ullam
+                      praesentium voluptatem at laudantium necessitatibus
+                      commodi consectetur tenetur libero ducimus minus? Magni,
+                      atque repudiandae.
+                    </p>
+                    <div class="w-full flex justify-center pt-5 pb-5">
+                      <a href="javascript:void(0)" class="mx-5">
+                        <div aria-label="Github" role="img">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="#718096"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            class="feather feather-github"
+                          >
+                            <path
+                              d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                            ></path>
+                          </svg>
+                        </div>
+                      </a>
+                      
+                      <a href="javascript:void(0)" class="mx-5">
+                        <div aria-label="Linkedin" role="img">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 17 17"
+                            fill="none"
+                          >
+                            <rect
+                              x="2"
+                              y="2"
+                              width="20"
+                              height="20"
+                              rx="5"
+                              ry="5"></rect>
+                            <path
+                              d="M4.14062 16.5V5.98828H0.871094V16.5H4.14062ZM2.48828 4.58203C3.54297 4.58203 4.38672 3.70312 4.38672 2.64844C4.38672 1.62891 3.54297 0.785156 2.48828 0.785156C1.46875 0.785156 0.625 1.62891 0.625 2.64844C0.625 3.70312 1.46875 4.58203 2.48828 4.58203ZM16.3398 16.5H16.375V10.7344C16.375 7.92188 15.7422 5.74219 12.4375 5.74219C10.8555 5.74219 9.80078 6.62109 9.34375 7.42969H9.30859V5.98828H6.17969V16.5H9.44922V11.2969C9.44922 9.92578 9.69531 8.625 11.3828 8.625C13.0703 8.625 13.1055 10.1719 13.1055 11.4023V16.5H16.3398Z"
+                              fill="#718096 "
+                            ></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                          </svg>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                role="listitem"
+                class="xl:w-1/3 sm:w-3/4 md:w-2/5 relative mt-16 mb-32 sm:mb-24 xl:max-w-sm lg:w-2/5"
+              >
+                <div class="rounded overflow-hidden shadow-md bg-white">
+                  <div class="absolute -mt-20 w-full flex justify-center">
+                    <div class="h-32 w-32">
+                      <img
+                        src="./narvaez.jpeg"
+                        alt="Display Picture of Jose Esteban Narvaez"
+                        role="img"
+                        class="rounded-full object-cover h-full w-full shadow-md"
+                      />
+                    </div>
+                  </div>
+                  <div class="px-6 mt-16">
+                    <h1 class="font-bold text-3xl text-center mb-1">
+                      Jose Esteban Narvaez
+                    </h1>
+                    <p class="text-gray-800 text-sm text-center">Moderador</p>
+                    <p
+                      class="text-center text-gray-600 text-base pt-3 font-normal"
+                    >
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Sint explicabo, ipsam perferendis itaque accusamus quia
+                      totam, tempore exercitationem architecto voluptas nobis
+                      debitis eveniet sapiente esse qui, deleniti facere quis
+                      quibusdam?
+                    </p>
+                    <div class="w-full flex justify-center pt-5 pb-5">
+                      <a href="javascript:void(0)" class="mx-5">
+                        <div aria-label="Github" role="img">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="#718096"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            class="feather feather-github"
+                          >
+                            <path
+                              d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                            ></path>
+                          </svg>
+                        </div>
+                      </a>
+                      
+                      <a href="javascript:void(0)" class="mx-5">
+                        <div aria-label="Linkedin" role="img">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 17 17"
+                            fill="none"
+                          >
+                            <rect
+                              x="2"
+                              y="2"
+                              width="20"
+                              height="20"
+                              rx="5"
+                              ry="5"></rect>
+                            <path
+                              d="M4.14062 16.5V5.98828H0.871094V16.5H4.14062ZM2.48828 4.58203C3.54297 4.58203 4.38672 3.70312 4.38672 2.64844C4.38672 1.62891 3.54297 0.785156 2.48828 0.785156C1.46875 0.785156 0.625 1.62891 0.625 2.64844C0.625 3.70312 1.46875 4.58203 2.48828 4.58203ZM16.3398 16.5H16.375V10.7344C16.375 7.92188 15.7422 5.74219 12.4375 5.74219C10.8555 5.74219 9.80078 6.62109 9.34375 7.42969H9.30859V5.98828H6.17969V16.5H9.44922V11.2969C9.44922 9.92578 9.69531 8.625 11.3828 8.625C13.0703 8.625 13.1055 10.1719 13.1055 11.4023V16.5H16.3398Z"
+                              fill="#718096 "
+                            ></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                          </svg>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                role="listitem"
+                class="xl:w-1/3 sm:w-3/4 md:w-2/5 relative mt-16 mb-32 sm:mb-24 xl:max-w-sm lg:w-2/5"
+              >
+                <div class="rounded overflow-hidden shadow-md bg-white">
+                  <div class="absolute -mt-20 w-full flex justify-center">
+                    <div class="h-32 w-32">
+                      <img
+                        src="./orejuela.jpeg"
+                        alt="Display Picture of Juan Camilo Orejuela"
+                        role="img"
+                        class="rounded-full object-cover h-full w-full shadow-md"
+                      />
+                    </div>
+                  </div>
+                  <div class="px-6 mt-16">
+                    <h1 class="font-bold text-3xl text-center mb-1">
+                      Juan Camilo Orejuela
+                    </h1>
+                    <p class="text-gray-800 text-sm text-center">Web Master</p>
+                    <p
+                      class="text-center text-gray-600 text-base pt-3 font-normal"
+                    >
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Dignissimos, consequatur. Aliquid ducimus doloribus rerum
+                      beatae recusandae incidunt commodi nobis odit, nostrum
+                      ipsa accusantium aspernatur debitis voluptate in hic,
+                      laborum laboriosam?
+                    </p>
+                    <div class="w-full flex justify-center pt-5 pb-5">
+                      <a href="javascript:void(0)" class="mx-5">
+                        <div aria-label="Github" role="img">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="#718096"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            class="feather feather-github"
+                          >
+                            <path
+                              d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                            ></path>
+                          </svg>
+                        </div>
+                      </a>
+                      
+                      <a href="javascript:void(0)" class="mx-5">
+                        <div aria-label="Linkedin" role="img">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 17 17"
+                            fill="none"
+                          >
+                            <rect
+                              x="2"
+                              y="2"
+                              width="20"
+                              height="20"
+                              rx="5"
+                              ry="5"></rect>
+                            <path
+                              d="M4.14062 16.5V5.98828H0.871094V16.5H4.14062ZM2.48828 4.58203C3.54297 4.58203 4.38672 3.70312 4.38672 2.64844C4.38672 1.62891 3.54297 0.785156 2.48828 0.785156C1.46875 0.785156 0.625 1.62891 0.625 2.64844C0.625 3.70312 1.46875 4.58203 2.48828 4.58203ZM16.3398 16.5H16.375V10.7344C16.375 7.92188 15.7422 5.74219 12.4375 5.74219C10.8555 5.74219 9.80078 6.62109 9.34375 7.42969H9.30859V5.98828H6.17969V16.5H9.44922V11.2969C9.44922 9.92578 9.69531 8.625 11.3828 8.625C13.0703 8.625 13.1055 10.1719 13.1055 11.4023V16.5H16.3398Z"
+                              fill="#718096 "
+                            ></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                          </svg>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <p class="flex flex-col tracking-tight leading-9 text-center">
-            <span class="text-text-gray-200 text-base lg:text-lg font-jost"> +1 (378) 400-1234</span>
-            <span class="text-text-gray-200 text-base lg:text-lg font-jost"> julie@email.com</span>
-					</p>
         </div>
-        <img src="/person3.png" alt="">
-      </div>
-	  </div>
+      </dh-component>
+      <!-- Code block ends -->
+      <!--- more free and premium Tailwind CSS components at https://tailwinduikit.com/ --->
+    </div>
   </section>
-
 </MainLayout>
 
 <style>
-
   /* Hide scrollbar for Chrome, Safari and Opera */
   .no-scrollbar::-webkit-scrollbar {
-      display: none;
+    display: none;
   }
 
   /* Hide scrollbar for IE, Edge and Firefox */
   .no-scrollbar {
-      -ms-overflow-style: none;  /* IE and Edge */
-      scrollbar-width: none;  /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
   }
-
 </style>
