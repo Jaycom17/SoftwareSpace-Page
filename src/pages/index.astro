@@ -3,7 +3,6 @@ import MainLayout from '../layouts/main-layout.astro'
 import Button from '../components/button.tsx'
 import ArrowSec from '../icons/arrow-sec.tsx'
 import CallIcon from "../icons/call.tsx"
-import Experience from '../components/experience.tsx'
 
 
 const services = [
@@ -23,25 +22,25 @@ const services = [
 
 const projects = [
 	{
-		img: '/project1.png',
+		img: '/project1.webp',
 		name: 'EvalUnicauca',
 		text: 'Sitio web para la evaluacion de docentes de la universidad del cauca.',
 		link: "https://github.com/Jaycom17/app-autoevaluaciones"
 	},
 	{
-		img: '/project2.jpg',
+		img: '/project2.webp',
 		name: 'Webscraping con NodeJS',
 		text: 'API que realiza webscraping a mercadolibre.',
 		link: "https://github.com/Jaycom17/scraping-store"
 	},
 	{
-		img: '/project3.png',
+		img: '/project3.webp',
 		name: 'Componente de ReactJS',
 		text: 'react-card-profile es un componente de react que permite mostrar una tarjeta de perfil.',
-		link: "https://github.com/Jaycom17/react-card-profile"
+		link: "https://www.npmjs.com/package/react-card-profile"
 	},
 	{
-		img: '/project2.jpg',
+		img: '/project2.webp',
 		name: 'Music API',
 		text: 'API que permite las operaciones CRUD para canciones, relizando webscraping a youtube.',
 		link: "https://github.com/Jaycom17/node-express-songs-api"
@@ -55,7 +54,7 @@ const projects = [
 
 	<!-- Banner -->
 	
-	<section class="w-full h-[30rem] bg-hero bg-no-repeat bg-cover lg:min-h-[30rem] px-12 xl:px-0 flex items-center ">
+	<section class="w-full h-[30rem]  bg-[url(./banner.webp)] bg-no-repeat bg-cover lg:min-h-[30rem] px-12 xl:px-0 flex items-center ">
 		<div class="lg:max-w-[1200px] w-full mx-auto flex flex-col">
 			<h1 class="text-[40px] leading-[50px] md:text-[60px] xl:text-[85px] pb-4 font-dm md:leading-[106.25px] w-full xl:max-w-[50%] text-white">SoftwareSpace</h1>
 			<p class="text-base md:text-[22px] pb-5 font-jost text-primary-400 w-full lg:max-w-[50%]">Traemos el poder del espacio directamente a tu maquina.</p>
@@ -90,7 +89,7 @@ const projects = [
 			<div class="flex gap-4 pt-3 items-center">
 				<CallIcon/>
 				<p class="flex flex-col text-text-gray-200 font-jost tracking-tight">
-					<span class="text-2xl font-bold leading-9 ">+57 3123456789</span>
+					<span class="text-2xl font-bold leading-9 ">+57 3135739668</span>
 					<span class="text-[22px] leading-8">No dudes en llamar</span>
 				</p>
 			</div>
@@ -100,7 +99,7 @@ const projects = [
 		</div>
 
 		<div >
-			<img class="rounded-br-full" src="/main-about.jpg" alt="pensando" />
+			<img class="rounded-br-full" src="/main-about.webp" alt="pensando" />
 		</div>
 	</section>
 	<!-- Projects Section -->
@@ -112,8 +111,8 @@ const projects = [
 			{
 			projects.map((proj) => {
 				return (
-					<a href={proj.link} target="_blank" class="w-full flex flex-col gap-4 ease-in-out duration-300 hover:scale-[1.03] hover:bg-[#fff] rounded-xl p-4">
-					<img src={proj.img} alt="projects" class="h-[320px] rounded-xl"/>
+					<a href={proj.link} target="_blank" class="w-full flex flex-col gap-4 ease-in-out duration-300 hover:scale-[1.03] hover:bg-[#fff] rounded-xl p-4 justify-center items-center">
+					<img src={proj.img} alt="projects" class="h-[150px] md:h-[250px] md:w-[500px] lg:h-[340px] rounded-xl"/>
 							<p class="flex flex-col tracking-tight leading-9">
 								<span class="text-primary-200 text-lg lg:text-[25px] font-dm">{proj.name}</span>
 								<span class="text-text-gray-200 text-base lg:text-lg font-jost">{proj.text}</span>
