@@ -9,44 +9,44 @@ const ContactForm = () => {
           <input
             type="text"
             name="name"
-            className="col-span-1 border-b w-full border-black outline-none py-3 text-base lg:text-[22px] lg:leading-[33px] tracking-tight font-jost text-text-gray"
-            placeholder="Name"
+            className="col-span-1 p-4 rounded-xl border-b w-full border-black outline-none py-3 text-base lg:text-[22px] lg:leading-[33px] tracking-tight font-jost text-text-gray"
+            placeholder="¿Quien eres?"
           />
         </label>
         <label htmlFor="email">
           <input
             type="email"
             name="email"
-            className="col-span-1 border-b w-full border-black outline-none py-3 text-base lg:text-[22px] lg:leading-[33px] tracking-tight font-jost text-text-gray"
-            placeholder="Email"
+            className="col-span-1 p-4 rounded-xl border-b w-full border-black outline-none py-3 text-base lg:text-[22px] lg:leading-[33px] tracking-tight font-jost text-text-gray"
+            placeholder="Tu email"
           />
         </label>
         <label htmlFor="subject">
           <input
             type="text"
             name="subject"
-            className="col-span-1 border-b w-full border-black outline-none py-3 text-base lg:text-[22px] lg:leading-[33px] tracking-tight font-jost text-text-gray"
-            placeholder="Subject"
+            className="col-span-1 p-4 rounded-xl border-b w-full border-black outline-none py-3 text-base lg:text-[22px] lg:leading-[33px] tracking-tight font-jost text-text-gray"
+            placeholder="¿Que servicio necesitas?"
           />
         </label>
         <label htmlFor="phone">
           <input
             type="number"
             name="phone"
-            className="col-span-1 border-b w-full border-black outline-none py-3 text-base lg:text-[22px] lg:leading-[33px] tracking-tight font-jost text-text-gray"
-            placeholder="Phone"
+            className="col-span-1 p-4 rounded-xl border-b w-full border-black outline-none py-3 text-base lg:text-[22px] lg:leading-[33px] tracking-tight font-jost text-text-gray"
+            placeholder="Tu telefono"
           />
         </label>
         <textarea
           name="message"
-          className="col-span-2 border-b w-full border-black outline-none py-3 text-base lg:text-[22px] lg:leading-[33px] tracking-tight font-jost text-text-gray"
+          className="col-span-2 p-4 rounded-xl border-b w-full border-black outline-none py-3 text-base lg:text-[22px] lg:leading-[33px] tracking-tight font-jost text-text-gray"
           cols={30}
           rows={10}
-          placeholder="Hello, I am interested in..."
+          placeholder="Cuentanos que necesitas..."
         ></textarea>
 
         <div className="w-full flex justify-end col-span-2">
-          <Button text="Submit" type="submit" />
+          <Button text="Enviar" type="submit" />
         </div>
       </form>
     </div>

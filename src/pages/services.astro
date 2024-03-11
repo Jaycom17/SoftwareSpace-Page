@@ -1,157 +1,166 @@
 ---
-import MainLayout from '../layouts/main-layout.astro'
-import One from "../icons/one.tsx"
-import Two from "../icons/two.tsx"
-import Three from "../icons/three.tsx"
-import Four from "../icons/four.tsx"
-import ServiceIconOne from "../icons/service1-icon.tsx"
-import ServiceIconTwo from "../icons/service2-icon.tsx"
-import ServiceIconThree from "../icons/service3-icon.tsx"
-import ServiceIconFour from "../icons/service4-icon.tsx"
-
+import MainLayout from "../layouts/main-layout.astro";
+import One from "../icons/one.tsx";
+import Two from "../icons/two.tsx";
+import Three from "../icons/three.tsx";
+import Four from "../icons/four.tsx";
+import QuoteText from "../components/quote";
 
 const services = [
-	{
-		title: 'Project Plan',
-		text: 'There are many variations of the passages of lorem Ipsum from available, majority.'
-	},
-	{
-		title: 'Interior Work',
-		text: 'There are many variations of the passages of lorem Ipsum from available, majority.'
-	},
-	{
-		title: 'Realization',
-		text: 'There are many variations of the passages of lorem Ipsum from available, majority.'
-	},
-	{
-		title: '2d/3d Art Work',
-		text: 'There are many variations of the passages of lorem Ipsum from available, majority.'
-	},
-	{
-		title: 'Retail design',
-		text: 'There are many variations of the passages of lorem Ipsum from available, majority.'
-	},
-	{
-		title: 'Decoration Work',
-		text: 'There are many variations of the passages of lorem Ipsum from available, majority.'
-	},
-]
+  {
+    title: "Software a medida",
+    text: "Desarrollamos software a medida para empresas y startups. Nos especializamos en el desarrollo de aplicaciones web y de escritorio.",
+  },
+  {
+    title: "Aplicaciones móviles",
+    text: "Desarrollamos aplicaciones móviles para Android y iOS. Nos especializamos en el desarrollo de aplicaciones nativas y multiplataforma.",
+  },
+  {
+    title: "Sitios web",
+    text: "Desarrollamos sitios web a medida para empresas y startups. Nos especializamos en el desarrollo de sitios web corporativos y de comercio electrónico.",
+  },
+  {
+    title: "Inventarios",
+    text: "Desarrollamos soluciones enfocadas a la gestión de inventarios para empresas.",
+  },
+  {
+    title: "Bases de datos",
+    text: "Diseñamos, desarrollamos y gestionamos bases de datos para cualquier tipo de aplicación.",
+  },
+  {
+    title: "Consultoría",
+    text: "Brindamos consultoría en desarrollo de software y tecnologías de la información. Nos especializamos en la gestión de proyectos de software.",
+  },
+];
 
 const howWeWorkDetails = [
   {
-    imgIcon: ServiceIconOne,
     numIcon: One,
-    img: '/service1.png',
-    title: 'Concept & Details',
-    info:'It is a long established fact  will be distracted. Lorem Ipsum is simply dummy from text of the and typesetting indufstry.'
-
+    img: "/service1.webp",
+    title: "Reunión con el cliente",
+    info: "En esta fase, nos reunimos con el cliente para comprender sus necesidades y objetivos. Analizamos sus requerimientos específicos y establecemos las bases para un proyecto exitoso.",
   },
   {
-    imgIcon: ServiceIconTwo,
     numIcon: Two,
-    img: '/service2.png',
-    title: 'Idea For Work',
-    info:'It is a long established fact  will be distracted. Lorem Ipsum is simply dummy from text of the and typesetting indufstry.'
-
+    img: "/service2.webp",
+    title: "Acordar los entregables",
+    info: "Trabajamos en conjunto con el cliente para definir claramente los entregables del proyecto. Establecemos metas y plazos realistas, garantizando una alineación clara de las expectativas y resultados.",
   },
   {
-    imgIcon: ServiceIconThree,
     numIcon: Three,
-    img: '/service3.png',
-    title: 'Design',
-    info:'It is a long established fact  will be distracted. Lorem Ipsum is simply dummy from text of the and typesetting indufstry.'
-
+    img: "/service3.webp",
+    title: "Desarrollo del proyecto",
+    info: "Durante esta etapa, nuestro equipo de desarrollo se sumerge en la implementación del proyecto. Utilizamos las mejores prácticas de desarrollo de software y mantenemos una comunicación constante con el cliente para asegurar la calidad y la satisfacción.",
   },
   {
-    imgIcon: ServiceIconFour,
     numIcon: Four,
-    img: '/service4.png',
-    title: 'Perfection',
-    info:'It is a long established fact  will be distracted. Lorem Ipsum is simply dummy from text of the and typesetting indufstry.'
-
+    img: "/service4.webp",
+    title: "Entrega del proyecto",
+    info: "Finalmente, entregamos el proyecto al cliente, asegurándonos de que cumpla con todas las especificaciones acordadas. Proporcionamos soporte post-implementación y nos aseguramos de que el cliente esté completamente satisfecho con el resultado final.",
   },
-]
+];
 ---
 
-
-<MainLayout title = 'Interior Design Services'>
-
+<MainLayout title="Nuestros servicios">
   <!-- Banner Section -->
 
-  <section class="w-full bg-services h-[50vh] flex justify-center items-end">
-    <div class="py-[30px] lg:py-[41px] px-[60px] lg:px-[152px] flex flex-col justify-center items-center bg-white rounded-tl-[37px] rounded-tr-[37px] gap-2.5">
-      <h1 class="text-[30px] leading-[40px] lg:text-[50px] lg:leading-[62px] font-dm capitalize text-primary-200 ">Services</h1>
-      <p class="text-base lg:text-[22px] lg:leading-[33px] tracking-tight font-jost text-text-gray"> <a href="/">Home</a> / Services </p>
-    </div>
+  <section
+    class="w-full bg-[url('/servicespage-bg.webp')] bg-no-repeat bg-cover h-[30rem] flex justify-center items-end  p-5"
+  >
+  <QuoteText
+      text="La mejor manera de encontrar a uno mismo es perderse en el servicio de los demás"
+      name="Mahatma Gandhi" />
   </section>
 
-  	<!-- Services Section -->
+  <!-- Services Section -->
 
-	<section class="lg:max-w-[1200px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10 lg:gap-y-12 xl:px-0 w-full mx-auto pt-[100px] lg:pt-[200px] justify-between ">
-		{
-			services.map((service) => {
-				return (
-					<div class="w-full col-span-1 max-w-[358px] mx-auto flex rounded-[30px] hover:bg-primary-300 px-5 py-[83px] flex-col justify-center items-center gap-3 md:gap-5">
-						<h3 class="text-text-blue font-dm text-[22px] md:text-[25px] leading-loose">{service.title}</h3>
-						<p class="text-base md:text-[22px] tracking-tight font-jost text-text-gray leading-[33px] text-center"> {service.text}</p>
-						
-					</div>
-				)
-			})
-		}
-	</section>
-
-  <!-- How We Work Section -->
-  <section class="px-12 xl:px-0 w-full mt-[100px] lg:mt-[200px] min-h-screen ">
-   <div class="w-full lg:max-w-[1200px] p-12 mx-auto lg:px-[116px] lg:py-[160px] bg-primary-300 rounded-[70px] ">
-     <h2 class="font-dm tracking-wide text-center leading-[37px] lg:leading-[62.50px] text-[30px] lg:text-[50px] w-full capitalize lg:max-w-[50%] pb-2 mx-auto">How We Work</h2>
-		<p class="text-base md:text-[22px] text-center tracking-tight font-jost text-text-gray leading-[33px] lg:max-w-[60%] mx-auto">It is a long established fact that a reader will be distracted by the of readable content of page  lookings at its layouts  points.</p>
-
-    <div class="pt-[70px] lg:pt-[100px] flex flex-col gap-[70px] ">
-      <!-- Inner Sections -->
-
+  <section class="flex content-center justify-center flex-col pt-[100px]">
+    <h2
+      class="text-[30px] text-center  font-dm tracking-wide capitalize leading-8 md:leading-[62.50px] md:text-[50px] text-text-blue"
+    >
+      Nuestros Servicios
+    </h2>
+    <div
+      class="lg:max-w-[1200px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10 lg:gap-y-12 xl:px-0 w-full mx-auto pt-[10px] lg:pt-[10px] justify-between"
+    >
       {
-        howWeWorkDetails.map((detail, index) => {
-          const ImageIcon = detail.imgIcon
-          const NumberIcon = detail.numIcon
-          const className = `flex justify-between flex-col ${index % 2 === 0 ? "lg:flex-row" : "lg:flex-row-reverse"} gap-[50px] items-center max-w-[967px]`
-
-          return(
-            <div class={className}>
-              <img src={detail.img} alt=""/>
-              <div class="flex flex-col gap-12 lg:gap-[58px]">
-                <div class="justify-between hidden lg:flex">
-                  <ImageIcon />
-                  <NumberIcon/>
-                </div>
-                <div class="flex flex-col gap-3">
-                  <h3 class="text-text-blue font-dm text-[22px] md:text-[25px] leading-loose">{detail.title}</h3>
-                  <p class="text-base md:text-[22px] tracking-tight font-jost text-text-gray leading-[33px]">{detail.info}</p>
-                </div>
-              </div>
+        services.map((service) => {
+          return (
+            <div class="w-full col-span-1 max-w-[358px] mx-auto flex rounded-[30px] ease-in-out duration-[0.35s] hover:bg-primary-300 px-5 py-[83px] flex-col justify-center items-center gap-3 md:gap-5">
+              <h3 class="text-text-blue font-dm text-[22px] md:text-[25px] leading-loose">
+                {service.title}
+              </h3>
+              <p class="text-base md:text-[22px] tracking-tight font-jost text-text-gray leading-[33px] text-center">
+                {" "}
+                {service.text}
+              </p>
             </div>
-          )
+          );
         })
       }
-
-      <!-- Inner Sections End -->
     </div>
-   </div>
   </section>
 
+  <!-- How We Work Section -->
+  <section class="px-12 xl:px-0 w-full mt-[100px] lg:mt-[100px] min-h-screen">
+    <div
+      class="w-full lg:max-w-[1200px] p-12 mx-auto lg:px-[116px] lg:py-[160px] bg-primary-300 rounded-[70px]"
+    >
+      <h2
+        class="font-dm tracking-wide text-center leading-[37px] lg:leading-[62.50px] text-[30px] lg:text-[50px] w-full capitalize lg:max-w-[50%] pb-2 mx-auto"
+      >
+        ¿Como trabajamos?
+      </h2>
+      <p
+        class="text-base md:text-[22px] text-center tracking-tight font-jost text-text-gray leading-[33px] lg:max-w-[60%] mx-auto"
+      >
+        Cada cliente es único, por lo que adaptamos nuestros procesos a las necesidades de cada proyecto.
+      </p>
+
+      <div class="pt-[70px] lg:pt-[100px] flex flex-col gap-[70px]">
+        <!-- Inner Sections -->
+
+        {
+          howWeWorkDetails.map((detail, index) => {
+            const NumberIcon = detail.numIcon;
+            const className = `flex justify-between flex-col ${index % 2 === 0 ? "lg:flex-row" : "lg:flex-row-reverse"} gap-[50px] items-center max-w-[967px]`;
+
+            return (
+              <div class={className}>
+                <img class="w-[100%] rounded-xl lg:w-[40%] md:w-[60%]" src={detail.img} alt="" />
+                <div class="flex flex-col gap-12 lg:gap-[58px]">
+                  <div class="justify-between hidden lg:flex">
+                    <NumberIcon />
+                  </div>
+                  <div class="flex flex-col gap-3">
+                    <h3 class="text-text-blue font-dm text-[22px] md:text-[25px] leading-loose">
+                      {detail.title}
+                    </h3>
+                    <p class="text-base md:text-[22px] tracking-tight font-jost text-text-gray leading-[33px]">
+                      {detail.info}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            );
+          })
+        }
+
+        <!-- Inner Sections End -->
+      </div>
+    </div>
+  </section>
 </MainLayout>
 
 <style>
-
   /* Hide scrollbar for Chrome, Safari and Opera */
   .no-scrollbar::-webkit-scrollbar {
-      display: none;
+    display: none;
   }
 
   /* Hide scrollbar for IE, Edge and Firefox */
   .no-scrollbar {
-      -ms-overflow-style: none;  /* IE and Edge */
-      scrollbar-width: none;  /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
   }
-
 </style>
